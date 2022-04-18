@@ -1,0 +1,13 @@
+module.exports={
+  entry:{
+    index:'./src/index.js'
+  },
+  output:{
+    path:__dirname+'public',
+    filename:'./js/[name].js'
+  },
+  devServer:{
+    contentBase:'./public',//目录
+    inline:true//实时刷新
+  }
+}
